@@ -3,6 +3,7 @@ import math
 import random
 import numpy as np
 import matplotlib
+matplotlib.use('GTK')
 import matplotlib.pyplot as plt
 from collections import namedtuple
 from itertools import count
