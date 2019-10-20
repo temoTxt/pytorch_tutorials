@@ -209,3 +209,6 @@ def main():
         evaluate(model, data_loader_test, device=device)
 
     print("That's it!")
+
+if __name__ == '__main__':
+    main()
