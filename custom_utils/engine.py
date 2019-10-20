@@ -5,8 +5,8 @@ import torch
 
 import torchvision.models.detection.mask_rcnn
 
-from utils.coco_utils import get_coco_api_from_dataset
-from utils.coco_eval import CocoEvaluator
+from custom_utils.coco_utils import get_coco_api_from_dataset
+from custom_utils.coco_eval import CocoEvaluator
 import utils
 
 
