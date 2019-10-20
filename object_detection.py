@@ -157,7 +157,7 @@ def get_transform(train):
     return T.Compose(transforms)
 
 from custom_utils.engine import train_one_epoch, evaluate
-import utils
+from custom_utils import utils
 
 
 def main():
