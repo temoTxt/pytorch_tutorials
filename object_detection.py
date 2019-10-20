@@ -147,7 +147,7 @@ def get_model_instance_segmentation(num_classes):
 
     return model
 
-from utils import transforms as T
+from custom_utils import transforms as T
 
 def get_transform(train):
     transforms = []
@@ -156,7 +156,9 @@ def get_transform(train):
         transforms.append(T.RandomHorizontalFlip(0.5))
     return T.Compose(transforms)
 
-from utils.engine import train_one_epoch, evaluate
+from custom_utils.engine import train_one_epoch, evaluate
+import utils
+
 
 def main():
     # train on the GPU or on the CPU, if a GPU is not available
